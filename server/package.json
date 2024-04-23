@@ -1,0 +1,20 @@
+{
+  "name": "node-mongo-docker-project",
+  "version": "1.0.0",
+  "description": "Simple project to implement node js and mongo db containerized application using docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=dev node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aditya shahare",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.8",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.7.3"
+  }
+}

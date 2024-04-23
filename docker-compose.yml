@@ -1,0 +1,50 @@
+version: "3"
+services:
+    tgol-client:
+        container_name: tgol-client
+        build: ./client
+            # context: ./client
+            # dockerfile: Dockerfile
+        image: enael/tgolclient
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./client:/usr/src/app
+    tgol-server:
+        container_name: tgol-server
+        build: ./server
+        image: enael/tgolserver
+        ports:
+            - "5000:5000"
+        volumes:
+            - ./server:/usr/src/app
+        environment:
+            - NODE_PORT=5000
+            - DB_HOST=mongodb
+            - DB_USER=root
+            - DB_PASSWORD=123456
+            - DB_NAME=mongodb
+            - DB_PORT=27017
+        links:
+            - mongodb
+          
+    mongodb:
+        container_name: mongodb
+        image: mongo:latest
+        restart: unless-stopped
+        env_file: ./server/.env
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=root
+            - MONGO_INITDB_ROOT_PASSWORD=123456
+        ports:
+            - "27017:27017"
+            
+    # mongo-seed:
+    #     build: ./mongo-seed
+    #     links:
+    #         - mongo
+    #     volumes:
+    #         - ./mongo-seed:/mongo-seed
+    #     command:
+    #         /mongo-seed/import.sh
+
