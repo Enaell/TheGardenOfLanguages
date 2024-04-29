@@ -1,7 +1,5 @@
-[
+db.words.insertMany([
     {
-        "_id" : {"$oid":"5e6516d4e4b93e0012d00000"},
-        "owner":{"$oid":"5e6516d4e4b93e0012d8e701"},
         "name": "家",
         "internationalName": "jia",
         "language": "Cn",
@@ -11,10 +9,7 @@
         "comments": "",
         "validated": true,
         "visibility": "Visitor",
-        "__v" : 0
     }, {
-        "_id" : {"$oid":"5e6516d4e4b93e0012d00001"},
-        "owner":{"$oid":"5e6516d4e4b93e0012d8e701"},
         "name": "茶",
         "internationalName": "cha",
         "language": "Cn",
@@ -24,10 +19,7 @@
         "comments": "",
         "validated": true,
         "visibility": "Visitor",
-        "__v" : 0
     }, {
-        "_id" : {"$oid":"5e6516d4e4b93e0012d00002"},
-        "owner":{"$oid":"5e6516d4e4b93e0012d8e701"},
         "name": "月",
         "internationalName": "yue",
         "language": "Cn",
@@ -37,10 +29,7 @@
         "comments": "",
         "validated": true,
         "visibility": "Visitor",
-        "__v" : 0
     }, {
-        "_id" : {"$oid":"5e6516d4e4b93e0012d00003"},
-        "owner":{"$oid":"5e6516d4e4b93e0012d8e701"},
         "name": "太阳",
         "internationalName": "tai yang",
         "language": "Cn",
@@ -50,10 +39,7 @@
         "comments": "",
         "validated": true, 
         "visibility": "Visitor",
-        "__v" : 0
     }, {
-        "_id" : {"$oid":"5e6516d4e4b93e0012d00004"},
-        "owner":{"$oid":"5e6516d4e4b93e0012d8e701"},
         "name": "天",
         "internationalName": "tian",
         "language": "Cn",
@@ -63,6 +49,5 @@
         "comments": "",
         "validated": true,
         "visibility": "Visitor",
-        "__v" : 0
     }
-]
+]);

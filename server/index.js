@@ -1,16 +1,20 @@
 require('dotenv').config();
 require('./src/config/dbconnect').connect();
 
-const express = require('express');
+require('./src/model/wordSchema');
+require('./src/model/deckSchema');
 
-const ProductRouter = require('./src/routes/ProductRoutes');
+const express = require('express');
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/', ProductRouter);
+
+var router = require('./src/routes/index');
+
+app.use('/', router);
 
 const PORT = process.env.NODE_PORT;
 

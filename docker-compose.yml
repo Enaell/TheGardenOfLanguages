@@ -23,7 +23,7 @@ services:
             - DB_HOST=mongodb
             - DB_USER=root
             - DB_PASSWORD=123456
-            - DB_NAME=mongodb
+            - DB_NAME=gardenOfLanguage
             - DB_PORT=27017
         links:
             - mongodb
@@ -36,13 +36,17 @@ services:
         environment:
             - MONGO_INITDB_ROOT_USERNAME=root
             - MONGO_INITDB_ROOT_PASSWORD=123456
+            - MONGO_INITDB_DATABASE=gardenOfLanguage
+        volumes:
+            # - ./data:/data/db
+            - ./scripts:/docker-entrypoint-initdb.d
         ports:
             - "27017:27017"
             
     # mongo-seed:
     #     build: ./mongo-seed
     #     links:
-    #         - mongo
+    #         - mongodb
     #     volumes:
     #         - ./mongo-seed:/mongo-seed
     #     command:
