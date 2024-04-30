@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME } = process.env;
 
-exports.connect = () => {
+export const connect = () => {
   mongoose
     .connect(
       `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?authSource=admin`

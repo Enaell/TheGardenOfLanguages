@@ -1,5 +1,9 @@
-const express = require('express');
-export const apiRouter = express.Router();
+import { Router } from 'express';
 
-router.use('/words', require('./wordRoutes'));
-router.use('/decks', require('./deckRoutes'))
+import { wordRouter } from './wordRoutes'
+import { deckRouter } from './deckRoutes'
+
+export const apiRouter = Router();
+
+apiRouter.use('/words', wordRouter);
+apiRouter.use('/decks', deckRouter)

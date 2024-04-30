@@ -1,19 +1,20 @@
 import express from 'express';
+import dotenv from 'dotenv'
 
-require('dotenv').config();
-require('./src/config/dbconnect').connect();
+import { connect } from './src/config/dbconnect'
+import { router } from './src/routes'
 
-require('./src/model/wordSchema');
-require('./src/model/deckSchema');
+dotenv.config();
+connect();
+
+// require('./src/model/wordSchema');
+// require('./src/model/deckSchema');
 
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-
-var router = require('./src/routes/index');
 
 app.use('/', router);
 

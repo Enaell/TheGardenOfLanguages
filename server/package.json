@@ -1,10 +1,11 @@
 {
   "name": "node-mongo-docker-project",
   "version": "1.0.0",
+  "type": "module",
   "description": "Simple project to implement node js and mongo db containerized application using docker",
   "main": "index.ts",
   "scripts": {
-    "start": "cross-env NODE_ENV=dev node index.ts",
+    "start": "cross-env NODE_ENV=dev tsx app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "aditya shahare",
@@ -18,9 +19,11 @@
     "mongoose": "^8.3.2"
   },
   "devDependencies": {
+    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.7",
     "ts-node": "^10.9.2",
+    "tsx": "^4.7.3",
     "typescript": "^5.4.5"
   }
 }

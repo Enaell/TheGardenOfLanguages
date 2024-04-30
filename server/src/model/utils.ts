@@ -1,19 +1,17 @@
-const UTILS = {
-    ROLES: {
-        Admin: 'Admin',
-        Customer: 'Customer',
-        Moderator: 'Moderator'
-    },
-    LANGUAGES: {
-        Fr: 'Fr',
-        En: 'En',
-        Cn: 'Cn'
-    },
-    VISIBILITY: {
-        Visitor: 'Visitor',
-        LoggedIn: 'Loggedin',
-        Owner: 'Owner'
-    }
+export enum ROLES {
+  Admin = 'Admin',
+  Customer = 'Customer',
+  Moderator = 'Moderator'
 }
 
-module.exports = UTILS;
+export enum LANGUAGES {
+  Fr = 'Fr',
+  En = 'En',
+  Cn = 'Cn'
+}
+
+export enum VISIBILITY {
+  Visitor = 'Visitor',
+  LoggedIn = 'Loggedin',
+  Owner = 'Owner'
+}
