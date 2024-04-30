@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose = require('mongoose');
 // const auth = require('../auth');
 const Word = mongoose.model('Word');
 const router = require('express').Router();

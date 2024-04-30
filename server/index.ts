@@ -1,10 +1,11 @@
+import express from 'express';
+
 require('dotenv').config();
 require('./src/config/dbconnect').connect();
 
 require('./src/model/wordSchema');
 require('./src/model/deckSchema');
 
-const express = require('express');
 
 const app = express();
 
