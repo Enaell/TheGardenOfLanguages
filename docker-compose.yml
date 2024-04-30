@@ -15,15 +15,15 @@ services:
         build: ./server
         image: enael/tgolserver
         ports:
-            - "5000:5000"
+            - "5001:5001"
         volumes:
             - ./server:/usr/src/app
         environment:
-            - NODE_PORT=5000
+            - NODE_PORT=5001
             - DB_HOST=mongodb
             - DB_USER=root
             - DB_PASSWORD=123456
-            - DB_NAME=gardenOfLanguage
+            - DB_NAME=gardenOfLanguages
             - DB_PORT=27017
         links:
             - mongodb
@@ -36,7 +36,7 @@ services:
         environment:
             - MONGO_INITDB_ROOT_USERNAME=root
             - MONGO_INITDB_ROOT_PASSWORD=123456
-            - MONGO_INITDB_DATABASE=gardenOfLanguage
+            - MONGO_INITDB_DATABASE=gardenOfLanguages
         volumes:
             # - ./data:/data/db
             - ./scripts:/docker-entrypoint-initdb.d
