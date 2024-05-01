@@ -1,0 +1,19 @@
+GET http://localhost:5001/api/words
+
+###
+POST http://localhost:5001/api/words
+content-type: application/json
+
+{
+    "word": [{
+        "name": "茶",
+        "internationalName": "cha",
+        "language": "Cn",
+        "subject": ["general"],
+        "level": 0,
+        "translations": [{"name": "Thé", "internationalName": "Thé", "language": "fr", "sentences": [{"sentence": "我喜欢喝茶", "translatedSentence": "Jaime boire du thé"}], "rank": 0}],
+        "comments": "",
+        "validated": true,
+        "visibility": "Visitor"
+    }]
+}
