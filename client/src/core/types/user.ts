@@ -1,6 +1,6 @@
 import { Language, Level, Role } from "./generics"
 
-export type UserType = {
+export type User = {
   _id?: string,
   token?: string,
   email: string,
