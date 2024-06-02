@@ -1,6 +1,6 @@
-import frPict from '../ressources/Fr.jpg';
-import enPict from '../ressources/En.jpg';
-import cnPict from '../ressources/Cn.jpg';
+import frPict from '@app/assets/landing/fr.jpg';
+import enPict from '@app/assets/landing/en.jpg';
+import cnPict from '@app/assets/landing/cn.jpg';
 import { Language } from '@core/types/generics';
 import { Box, CardMedia } from '@mui/material';
 

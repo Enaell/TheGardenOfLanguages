@@ -10,7 +10,7 @@ export const Row = ({ vertical, horizontal, reverse = false, spacing = 1, width,
   <Stack
     width={width || '100%'}
     useFlexGap
-    direction={reverse ? 'column-reverse' : 'column'}
+    direction={reverse ? 'row-reverse' : 'row'}
     spacing={spacing}
     alignItems={vertical}
     justifyContent={horizontal}
