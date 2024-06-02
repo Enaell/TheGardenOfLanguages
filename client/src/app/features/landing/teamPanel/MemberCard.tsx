@@ -15,7 +15,7 @@ const SocialIcons = ({ name, size }: { name: string, size: string; }) => {
           <IconButton><RiMailFill size={size} color='lightblue' /></IconButton>
         </>
       );
-    default: // case translate('landingPage.teamMember.lulu.name'):
+    default: // case translate('landingPage.teamMember.julian.name'):
       return (
         <>
           <IconButton><RiFacebookFill size={size} color='blue' /></IconButton>

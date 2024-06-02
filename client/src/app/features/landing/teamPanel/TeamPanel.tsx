@@ -1,7 +1,7 @@
 import { MemberCard } from './MemberCard';
 
-import totoroPict from './ressources/totoro.jpg';
-import kikiPict from './ressources/kiki.png';
+import totoroPict from './assets/totoro.jpg';
+import firefoxPict from './assets/firefox.jpeg';
 import { useTranslation } from 'react-i18next';
 import { Row } from '@core/components';
 
@@ -13,7 +13,7 @@ export const TeamPanel = () => {
   return (
     <Row flexWrap='wrap' horizontal='space-around' width='100%' style={{ maxWidth: '1200px', paddingTop: '60px' }} >
       <MemberCard image={totoroPict} name={t(`${lptm}.aurelien.name`)} description={t(`${lptm}.aurelien.description`)} />
-      <MemberCard image={kikiPict} name={t(`${lptm}.lulu.name`)} description={t(`${lptm}.lulu.description`)} />
+      <MemberCard image={firefoxPict} name={t(`${lptm}.julian.name`)} description={t(`${lptm}.julian.description`)} />
     </Row>
   );
 }; 

@@ -1,6 +1,6 @@
 {
   "application-name": "Let's Learn !",
-  "connection":{
+  "connection": {
     "signin": "S'enregistrer",
     "login": "Se connecter",
     "discover": "Découvrir",
@@ -41,23 +41,23 @@
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
       "deck": {
-        "title":"Gérez vos decks de mots",
+        "title": "Gérez vos decks de mots",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
       "news": {
-        "title":"Suivez les actualités",
+        "title": "Suivez les actualités",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
       "culture": {
-        "title":"Découvrez de nouvelles cultures",
+        "title": "Découvrez de nouvelles cultures",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
       "discuss": {
-        "title":"Discutez avec les autres Utilisateurs",
+        "title": "Discutez avec les autres Utilisateurs",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
       "share": {
-        "title":"Partagez vos expériences",
+        "title": "Partagez vos expériences",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       }
     },
@@ -66,8 +66,8 @@
         "name": "Aurelien Martin",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
-      "lulu": {
-        "name": "Lulu Wang",
+      "julian": {
+        "name": "Julian Colin",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       }
     },
@@ -98,7 +98,7 @@
       "rank": "Rang",
       "comments": "Commentaires",
       "status": "Statut",
-      "validation":"Validation",
+      "validation": "Validation",
       "validated": "Validée",
       "pending": "En attente de validation",
       "visibility": "Visibilitée"
@@ -120,7 +120,7 @@
       "rank": "Rang",
       "comments": "Commentaires",
       "status": "Status",
-      "validation":"Validation",
+      "validation": "Validation",
       "validated": "Validée",
       "pending": "En attente de validation",
       "visibility": "Visibilitée"
@@ -135,7 +135,7 @@
     "Ko": "Coréen",
     "Jp": "Japonais"
   },
-  "subjects":{
+  "subjects": {
     "general": "General",
     "food": "Nourriture",
     "daily": "Vie quotidienne",
@@ -143,7 +143,7 @@
     "number": "Nombre"
   },
   "visibility": {
-    "visitor": "Tout le monde", 
+    "visitor": "Tout le monde",
     "loggedin": "Personnes connectées",
     "owner": "Uniquement moi"
   },
@@ -154,7 +154,7 @@
     "manga": "Manga",
     "culture": "Culture"
   },
-  "api":{
+  "api": {
     "dictionary": {
       "getAllWords": {
         "success": "",

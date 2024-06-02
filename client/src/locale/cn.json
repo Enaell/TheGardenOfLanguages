@@ -1,6 +1,6 @@
 {
   "application-name": "Let's Learn!",
-  "connection":{
+  "connection": {
     "signin": "注册",
     "login": "登陆",
     "discover": "Discover",
@@ -41,23 +41,23 @@
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
       "deck": {
-        "title":"Manage your word decks",
+        "title": "Manage your word decks",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
       "news": {
-        "title":"Follow the news",
+        "title": "Follow the news",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
       "culture": {
-        "title":"Discover new cultures",
+        "title": "Discover new cultures",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
       "discuss": {
-        "title":"Discuss with the other users",
+        "title": "Discuss with the other users",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
       "share": {
-        "title":"Share your experiences",
+        "title": "Share your experiences",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       }
     },
@@ -66,8 +66,8 @@
         "name": "Aurelien Martin",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       },
-      "lulu": {
-        "name": "Lulu Wang",
+      "julian": {
+        "name": "Julian Colin",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
       }
     },
@@ -98,7 +98,7 @@
       "rank": "Rank",
       "comments": "Comments",
       "status": "Status",
-      "validation":"Validation",
+      "validation": "Validation",
       "validated": "Validated",
       "pending": "Pending Validation",
       "visibility": "Visibility"
@@ -120,7 +120,7 @@
       "rank": "Rank",
       "comments": "Comments",
       "status": "Status",
-      "validation":"Validation",
+      "validation": "Validation",
       "validated": "Validated",
       "pending": "Pending Validation",
       "visibility": "Visibility"
@@ -143,7 +143,7 @@
     "number": "Number"
   },
   "visibility": {
-    "visitor": "Everybody", 
+    "visitor": "Everybody",
     "loggedin": "Registered people",
     "owner": "Only me"
   },
@@ -154,7 +154,7 @@
     "manga": "Manga",
     "culture": "Culture"
   },
-  "api":{
+  "api": {
     "dictionary": {
       "getAllWords": {
         "success": "",
